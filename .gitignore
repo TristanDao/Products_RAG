@@ -1,0 +1,13 @@
+__pycache__/
+.env
+.cache/
+models/
+check_point.ipynb
+*.bin
+*.pt
+*.zip
+*.pkl
+
+*.ipynb_checkpoints/
+*.log
+*.csv
