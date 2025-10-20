@@ -58,11 +58,11 @@ def insert_batch(vector_db: VectorDatabase, batch_data: list, collection_name: s
 def main():
     CSV_FILE = "hoanghamobile.csv"
     COLLECTION_NAME = "products"
-    DB_TYPE = "supabase"
+    DB_TYPE = "mongodb"
     EMBEDDING_PROVIDER = "huggingface"
     # EMBEDDING_MODEL = "gemini-embedding-001"
     BATCH_SIZE = 50
-    RESET_COLLECTION = False
+    RESET_COLLECTION = True
 
     print("=" * 70)
     print(f"{'DATA INSERTION TO VECTOR DATABASE':^70}")

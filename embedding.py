@@ -95,16 +95,16 @@ class EmbeddingModel:
         result = self.encode(text)
         return result[0] if result else []
         
-# def main():
-#     embedder = EmbeddingModel(provider = "huggingface")
-#     texts = ["Hello, world!", "How are you?"]
-#     embeddings = embedder.encode(texts)
-#     print(f"{embeddings}")
-#     for i,eb in enumerate(embeddings):
-#         print(f"Text: {texts[i]} \nEmbedding: {eb[:5]}...\n")
+def main():
+    embedder = EmbeddingModel(provider = "huggingface")
+    texts = ["Hello, world!", "How are you?"]
+    embeddings = embedder.encode(texts)
+    print(f"{embeddings}")
+    for i,eb in enumerate(embeddings):
+        print(f"Text: {texts[i]} \nEmbedding: {eb[:5]}...\n")
 
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()
 
 
             
